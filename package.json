@@ -1,12 +1,12 @@
 {
-  "name": "advent-of-code-day-1",
-  "version": "0.0.1",
+  "name": "advent-of-code-2021",
+  "version": "1.0.0",
   "author": {
     "name": "Taher Dhilawala",
-    "url": "https://github.com/taher435"
+    "url": "https://taher.me"
   },
   "scripts": {
-    "start": "ts-node calculate-depth.ts",
+    "start": "ts-node index.ts",
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {

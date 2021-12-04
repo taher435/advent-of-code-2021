@@ -1,7 +1,4 @@
-// import fetch, { Response } from 'node-fetch'
-import { input } from './input'
-
-const calculateIncreaseDepthCount = (input: Array<number>) => {
+export const calculateIncreaseDepthCount = (input: Array<number>) => {
   let increasedDepthCount = 0
   for (let i = 1; i < input.length; i++) {
     increasedDepthCount += input[i] > input[i - 1] ? 1 : 0
@@ -9,7 +6,7 @@ const calculateIncreaseDepthCount = (input: Array<number>) => {
   return increasedDepthCount
 }
 
-const calculateSlidingWindowIncreaseDepthCount = (input: Array<number>) => {
+export const calculateSlidingWindowIncreaseDepthCount = (input: Array<number>) => {
   let previousWindowSum
   let increasedDepthCount = 0
   const windowSize = 3
@@ -22,10 +19,3 @@ const calculateSlidingWindowIncreaseDepthCount = (input: Array<number>) => {
   }
   return increasedDepthCount
 }
-
-const run = () => {
-  // console.log(calculateIncreaseDepthCount(input))
-  console.log(calculateSlidingWindowIncreaseDepthCount(input))
-}
-
-run()
